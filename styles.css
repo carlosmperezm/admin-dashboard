@@ -1,0 +1,17 @@
+:root {
+    --primary-color: lightblue;
+    --secondary-color: White;
+    --third-color: Yellow;
+}
+
+/* Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: Black;
+    color: White;
+}
