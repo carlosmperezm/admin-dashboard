@@ -65,11 +65,32 @@ nav .extra-links {
 }
 
 
+/* Header */
 .top-panel {
     background-color: var(--secondary-color);
     color: Black;
     grid-area: top-panel;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, 1fr);
 }
+
+.searchButton-container {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+    width: 90%;
+}
+
+input[type="search"] {
+    background-color: #ddd;
+    border-radius: 20px;
+    height: 30px;
+    width: 80%;
+}
+
+
+/* Main */
 
 main {
     background-color: Gray;
