@@ -2,6 +2,7 @@
     --primary-color: lightblue;
     --secondary-color: White;
     --third-color: Yellow;
+    --radius: 20px;
 }
 
 /* Resets */
@@ -33,6 +34,10 @@ body {
 
 li {
     list-style: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* Navbar */
@@ -76,25 +81,48 @@ nav .extra-links {
 }
 
 .searchButton-container {
-    grid-column: 1;
-    grid-row: 1;
+    grid: 1/1;
     place-self: center;
     width: 90%;
 }
 
 input[type="search"] {
     background-color: #ddd;
-    border-radius: 20px;
+    border-radius: var(--radius);
     height: 30px;
     width: 80%;
 }
 
 .notifications-section {
-    grid-row: 1;
-    grid-column: 2;
-    height: min-content;
+    grid: 1/2;
     place-self: center;
 }
+
+.greetings-section {
+    grid: 2/1;
+}
+
+.buttons-section {
+    grid: 2/2;
+    width: 100%;
+    place-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.buttons-section button {
+    background-color: var(--primary-color);
+    border-radius: var(--radius);
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    box-shadow: 1px 1px 5px 1px Black;
+    border: 1px solid Black;
+}
+
 
 
 /* Main */
