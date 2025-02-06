@@ -129,9 +129,10 @@ main {
     background-color: Gray;
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 300px;
     grid-template-rows: 50px 1fr;
     overflow: auto;
+    padding-bottom: 5rem;
 }
 
 .cards-container {
@@ -150,8 +151,32 @@ main {
     width: 100%;
     background-color: Red;
     overflow: auto;
+    border-radius: var(--radius);
 }
 
 .side {
     grid-column: 2;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 1rem;
+}
+
+
+.trending-container {
+    border-radius: var(--radius);
+    background-color: White;
+    color: Black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
+
+}
+
+.trending-container .item {
+    border: 1px dashed;
+    width: max-content;
 }
