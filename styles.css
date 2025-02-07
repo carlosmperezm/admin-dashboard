@@ -59,11 +59,19 @@ h1 {
     padding-top: 1em;
 }
 
-nav>.links {
+.links li a {
+    position: relative;
+    display: flex;
+}
+
+.links li a span {
+    position: relative;
+    transform: translate(5px, 5px);
+}
+
+nav>.top-links {
     grid-row: 2/span 2;
     display: grid;
-
-
 }
 
 nav .extra-links {
