@@ -2,7 +2,7 @@
     --primary-color: lightblue;
     --secondary-color: White;
     --third-color: Yellow;
-    --radius: 20px;
+    --radius: 10px;
 }
 
 /* Resets */
@@ -127,6 +127,7 @@ input[type="search"] {
     height: 40px;
     box-shadow: 1px 1px 5px 1px Black;
     border: 1px solid Black;
+
 }
 
 
@@ -162,6 +163,21 @@ main {
 .cards-container .card {
     height: 100%;
     width: 100%;
+    position: relative;
+    padding-left: 2rem;
+
+}
+
+.cards-container .card::before {
+    background-color: Yellow;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--radius);
+    border-bottom-left-radius: calc(var(--radius));
+    border-top-left-radius: calc(var(--radius));
 
 }
 
@@ -183,7 +199,7 @@ main {
     border-top: 1px solid Black;
 }
 
-.announcements:last-child() {
+.announcements:last-child(1) {
     /* This is not working */
     border-bottom: none;
 }
