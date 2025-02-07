@@ -15,8 +15,6 @@
 
 /* General */
 body {
-    background-color: Black;
-    color: White;
     display: grid;
     grid-template-areas:
         "navbar top-panel"
@@ -42,7 +40,6 @@ button:hover {
 }
 
 .card {
-    color: Black;
     background-color: White;
     border-radius: var(--radius);
     padding: 1rem;
@@ -137,7 +134,7 @@ input[type="search"] {
 /* Main */
 
 main {
-    background-color: Gray;
+    background-color: #eee;
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 400px;
@@ -217,7 +214,6 @@ main {
 
 .announcements-container {
     background-color: White;
-    color: Black;
     padding: 1rem;
     border-radius: var(--radius);
     margin-top: 20px;
@@ -228,7 +224,6 @@ main {
 .trending-container {
     border-radius: var(--radius);
     background-color: White;
-    color: Black;
     display: flex;
     flex-direction: column;
     align-items: center;
