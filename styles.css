@@ -84,6 +84,7 @@ nav .extra-links {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: repeat(2, 1fr);
+    padding: 0 2rem;
 }
 
 .searchButton-container {
@@ -97,6 +98,7 @@ input[type="search"] {
     border-radius: var(--radius);
     height: 30px;
     width: 80%;
+    border: none;
 }
 
 .notifications-section {
