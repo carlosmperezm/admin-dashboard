@@ -45,6 +45,10 @@ button:hover {
     padding: 1rem;
 }
 
+.profile-picture {
+    border-radius: calc(50%);
+}
+
 /* Navbar */
 nav {
     background-color: var(--primary-color);
@@ -109,6 +113,11 @@ input[type="search"] {
 .notifications-section {
     grid: 1/2;
     place-self: center;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
 }
 
 .greetings-section {
@@ -234,12 +243,16 @@ main {
     background-color: White;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
+    padding: 2rem;
     gap: 1rem;
 
 }
 
 .trending-container .item {
-    width: max-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.item .item-details {
+    align-self: center;
 }
