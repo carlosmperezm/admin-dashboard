@@ -251,7 +251,15 @@ main h3 {
     width: 100%;
     position: relative;
     padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
+.card-links {
+    align-self: flex-end;
+    display: flex;
+    gap: 15px;
 }
 
 .cards-container .card::before {
@@ -267,7 +275,6 @@ main h3 {
 
 }
 
-/* overflow: auto; */
 
 /* Side */
 .side {
