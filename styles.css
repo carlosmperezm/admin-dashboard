@@ -10,7 +10,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px dashed White; */
+}
+
+button {
+    appearance: none;
 }
 
 /* General */
@@ -25,7 +28,6 @@ body {
         "navbar main"
         "navbar main"
     ;
-    /* grid-template-rows: repeat(7, 1fr); */
     grid-template-rows: 180px 1fr;
     grid-template-columns: 300px 1fr;
     height: 100vh;
@@ -43,7 +45,7 @@ button:hover {
     background-color: White;
     border-radius: var(--radius);
     padding: 1rem;
-    box-shadow: 1px 1px 5px 1px #0003;
+    box-shadow: 0 0 5px 1px #0003;
 }
 
 .profile-picture {
@@ -94,16 +96,6 @@ nav .links {
     gap: 1.3em;
 }
 
-@keyframes rotate360 {
-    from {
-        transform: rotate(0);
-    }
-
-    to {
-        transform: rotate(360);
-    }
-}
-
 img {
     transition: transform 1s ease forwards;
 }
@@ -111,7 +103,7 @@ img {
 
 .links a:hover img {
     transform: rotate(360deg);
-    animation: rotate360 1s ease;
+    animation: rotate360 0.4s ease;
 }
 
 
@@ -144,7 +136,11 @@ nav .extra-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    border: 1px dashed;
+}
 
+.searchButton-container img {
+    transform: translateY(2px);
 }
 
 input[type="search"] {
@@ -161,7 +157,7 @@ input[type="search"] {
     gap: 1em;
 }
 
-.notification-container {
+.notificationIcon-container {
     align-self: flex-end;
     margin-bottom: 5px;
 }
@@ -211,9 +207,14 @@ input[type="search"] {
     padding: 5px;
     width: 100px;
     height: 40px;
-    box-shadow: 1px 1px 5px 1px Black;
-    border: 1px solid Black;
+    color: White;
+    box-shadow: 0 0 5px 1px #0008;
+    border: 0.1px solid;
 
+}
+
+.buttons-section button:hover {
+    animation: shake 0.1s ease-in;
 }
 
 
@@ -334,4 +335,27 @@ main h3 {
 
 .item .item-details {
     align-self: center;
+}
+
+
+@keyframes shake {
+    from {
+        transform: rotate(5deg);
+    }
+
+    to {
+        transform: rotate(-5deg);
+
+    }
+
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360);
+    }
 }
