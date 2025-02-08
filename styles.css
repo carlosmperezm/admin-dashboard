@@ -100,12 +100,18 @@ nav .extra-links {
     grid: 1/1;
     place-self: center;
     width: 90%;
+    border: 1px dashed;
+    /* Remove this */
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
 }
 
 input[type="search"] {
     background-color: #ddd;
     border-radius: var(--radius);
-    height: 30px;
     width: 80%;
     border: none;
 }
