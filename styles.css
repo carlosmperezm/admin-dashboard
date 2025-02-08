@@ -1,5 +1,5 @@
 :root {
-    --primary-color: lightblue;
+    --primary-color: #2596be;
     --secondary-color: White;
     --third-color: Yellow;
     --radius: 10px;
@@ -51,6 +51,10 @@ button:hover {
     height: 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Navbar */
 nav {
     background-color: var(--primary-color);
@@ -60,14 +64,22 @@ nav {
     padding-left: 1rem;
 }
 
+nav * {
+    color: White;
+
+}
+
 h1 {
     grid-row: 1;
     padding-top: 1em;
 }
 
 .links li a {
-    position: relative;
     display: flex;
+    /* border: 1px dashed; */
+    transform: translateX(50px) scale(1.2);
+    width: fit-content;
+    gap: 1em;
 }
 
 .links li a span {
@@ -75,7 +87,34 @@ h1 {
     transform: translate(5px, 5px);
 }
 
-nav>.top-links {
+
+nav .links {
+    filter: brightness(0) invert(1);
+    gap: 1.3em;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360);
+    }
+}
+
+img {
+    transition: transform 1s ease forwards;
+}
+
+
+.links a:hover img {
+    transform: rotate(360deg);
+    animation: rotate360 1s ease;
+}
+
+
+nav .top-links {
     grid-row: 2/span 2;
     display: grid;
 }
@@ -83,7 +122,6 @@ nav>.top-links {
 nav .extra-links {
     grid-row: 5;
     display: grid;
-
 }
 
 
@@ -273,4 +311,7 @@ main {
 
 .item .item-details {
     align-self: center;
+}
+}
+}
 }
