@@ -1,7 +1,7 @@
 :root {
     --primary-color: #2596be;
-    --secondary-color: White;
-    --third-color: Yellow;
+    --secondary-color: #e3e5ea;
+    --third-color: #92b1a9;
     --radius: 10px;
 }
 
@@ -79,7 +79,6 @@ h1 {
 
 .links li a {
     display: flex;
-    /* border: 1px dashed; */
     transform: translateX(50px) scale(1.2);
     width: fit-content;
     gap: 1em;
@@ -120,7 +119,7 @@ nav .extra-links {
 
 /* Header */
 .top-panel {
-    background-color: var(--secondary-color);
+    background-color: White;
     color: Black;
     grid-area: top-panel;
     display: grid;
@@ -136,7 +135,6 @@ nav .extra-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    border: 1px dashed;
 }
 
 .searchButton-container img {
@@ -144,7 +142,7 @@ nav .extra-links {
 }
 
 input[type="search"] {
-    background-color: #ddd;
+    background-color: var(--secondary-color);
     border-radius: var(--radius);
     width: 80%;
     border: none;
@@ -257,7 +255,7 @@ main h3 {
 }
 
 .cards-container .card::before {
-    background-color: Yellow;
+    background-color: var(--third-color);
     content: "";
     position: absolute;
     top: 0;
