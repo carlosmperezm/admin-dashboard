@@ -43,6 +43,7 @@ button:hover {
     background-color: White;
     border-radius: var(--radius);
     padding: 1rem;
+    box-shadow: 1px 1px 5px 1px #0003;
 }
 
 .profile-picture {
@@ -305,7 +306,7 @@ main h3 {
 
 .announcements-container {
     background-color: White;
-    padding: 1rem;
+    padding: 1em 2em;
     border-radius: var(--radius);
     transform: translateY(-20px);
 }
