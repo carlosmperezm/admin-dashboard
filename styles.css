@@ -213,18 +213,19 @@ main {
     grid-template-columns: 1fr 400px;
     grid-template-rows: 50px 1fr;
     overflow: auto;
-    padding-bottom: 2rem;
+    padding: 2rem;
+}
+
+main h3 {
+    transform: translateY(10px);
 }
 
 .cards-container {
     grid-row: 2;
     grid-column: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 0 1rem;
+    grid-template-columns: repeat(auto-fill, 350px);
     gap: 1rem;
-
 }
 
 .card-title {
@@ -258,12 +259,16 @@ main {
 /* Side */
 .side {
     grid-column: 2;
-    grid-row: 1/-1;
+    grid-row: 2/-1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-right: 2rem;
     gap: 3rem;
+}
+
+.announcements h3 {
+    transform: translateY(-40px);
 }
 
 .announcement:nth-child(even) {
@@ -289,9 +294,13 @@ main {
     background-color: White;
     padding: 1rem;
     border-radius: var(--radius);
-    margin-top: 20px;
+    transform: translateY(-20px);
 }
 
+.trending h3 {
+    transform: translateY(-20px);
+
+}
 
 
 .trending-container {
@@ -311,7 +320,4 @@ main {
 
 .item .item-details {
     align-self: center;
-}
-}
-}
 }
